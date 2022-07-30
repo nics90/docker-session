@@ -55,3 +55,51 @@ Output:
 (/\___/ |__/ \/   \__/ |__/  \/
                       /|
                       \|
+
+Example 3 : 
+
+a) Navigate to example3 directory:
+
+# cd docker-session/docker_file/example3
+
+b) Create a custom image to host flask application:
+
+# docker build -t flaskapp1 .
+
+c) Spin up the container to run flask application:
+
+# docker run -d -p 5000:5000 flaskapp1
+
+d) Go to browser and access the app at url - http://hostIP:5000 & http://hostIP:5000/devops
+
+Example 4 : Docker Compose Installation 
+
+a) Navigate to below directory :
+
+# cd docker-session/docker_compose
+
+b) Run the script install_compose.sh to install docker compose:
+
+# sh install_compose.sh
+
+Example 5 : Install Wordpress using docker compose :
+
+a) Navigate to directory :
+
+# cd docker-session/docker_compose/example1
+
+b) Run the below command :
+
+# docker-compose up -d
+
+c) Access the wordpress at url : http://hostIP:8000
+
+d) To clean up :
+
+# docker-compose down
+
+
+
+
+
+
